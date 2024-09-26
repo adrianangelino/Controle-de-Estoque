@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/client.css">
+</head>
+
+<body class="corpo_clint">
+    <div>
+        <form>
+            <div><label for="">Cliente</label></div>
+            <input style="border: 2px solid black;" type="text" id="cliente">
+
+            <div><label for="">Cnpj</label></div>
+            <input style="border: 2px solid black;" type="text" id="cnpj">
+
+            <div><label for="">Data</label></div>
+            <input style="border: 2px solid black;" type="date" id="tempo">
+
+            <div><label for="">preço</label></div>
+            <input style="border: 2px solid black;" type="number" id="preco">
+
+            <button style="border: 2px solid black;" id="insere" type="button">Inserir</button>
+            <button style="border: 2px solid black;" id="Voltar" type="button">voltar</button>
+
+        </form>
+
+    </div>
+
+    <!-- Firebase SDK -->
+</body>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+<script type="module" src="../Db/insec.js"></script>
+<script>
+    let btnvoltar = document.querySelector("#Voltar");
+
+    btnvoltar.addEventListener('click', function () {
+        window.location.href = "home.html";
+    })
+</script>
+
+</html>

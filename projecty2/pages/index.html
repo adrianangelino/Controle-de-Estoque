@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="corpo">
+
+    <div>
+        <div class="img-form"></div>
+        <div class="princ">
+            <form id="loginForm">
+                <div class="container">
+                <div><label for="email"></label></div>
+                <input type="email" name="email" id="email" placeholder="Email" >
+
+                <div><label for="password"></label></div>
+                <input type="password" name="password" id="password" placeholder="Senha" >
+
+                <div>
+                    <button type="button" class="btn-recoverpassword"><strong>Recuperar senha</strong></button>
+                </div>
+
+                <div>
+                    <button type="button" class="btn-login" onclick="login()"><strong>Login</strong></button>
+                </div>
+
+                <div><h3><strong>Você já possui uma conta?</strong></h3><a href="register.html">Resgistrar-se</a></div>
+            </div>
+            </form>
+
+        </div>
+
+    </div>
+ 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth-compat.js"></script>
+    <script src="../Db/index.js"></script>
+    <script src="../scrypts/verifica.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo para o formulário de edição */
+#form-edicao {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-edicao label {
+    font-size: 14px;
+    color: #333;
+}
+
+#form-edicao input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#form-edicao input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo dos botões no formulário de edição */
+#form-edicao button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+#form-edicao #salvar {
+    background-color: #28a745;
+}
+
+#form-edicao #salvar:hover {
+    background-color: #218838;
+}
+
+#form-edicao #cancelar {
+    background-color: #dc3545;
+}
+
+#form-edicao #cancelar:hover {
+    background-color: #c82333;
+}
+
+/* Estilo para a lista de financeiro */
+#financeiro-lista {
+    margin-top: 30px;
+}
+
+.financeiro {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.financeiro h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.financeiro p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.financeiro button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    margin: 5px;
+}
+
+.financeiro button:nth-child(1) {
+    background-color: #007bff;
+}
+
+.financeiro button:nth-child(1):hover {
+    background-color: #0056b3;
+}
+
+.financeiro button:nth-child(2) {
+    background-color: #dc3545;
+}
+
+.financeiro button:nth-child(2):hover {
+    background-color: #c82333;
+}
+
+/* Estilo dos botões iniciais */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #007bff; /* Cor padrão dos botões */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #form-edicao {
+        padding: 15px;
+    }
+
+    #form-edicao button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .financeiro {
+        padding: 10px;
+    }
+
+    .financeiro button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    #form-edicao {
+        padding: 10px;
+    }
+
+    #form-edicao button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .financeiro {
+        padding: 8px;
+    }
+
+    .financeiro button {
+        font-size: 10px;
+        padding: 4px;
+    }
+}

@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.img-form {
+    width: 100px;
+    height: 100px;
+    background-image: url('../icons/login.png'); /* Substitua pelo ícone desejado */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.princ {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-recoverpassword {
+    background-color: #007bff;
+}
+
+.btn-recoverpassword:hover {
+    background-color: #0056b3;
+}
+
+.btn-login {
+    background-color: #28a745;
+}
+
+.btn-login:hover {
+    background-color: #218838;
+}
+
+/* Estilo para o link de registro */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .img-form {
+        width: 80px;
+        height: 80px;
+    }
+
+    .princ {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-form {
+        width: 60px;
+        height: 60px;
+    }
+
+    .princ {
+        padding: 10px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}

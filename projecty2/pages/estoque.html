@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Estoque</title>
+    <link rel="stylesheet" href="../css/estoque.css">
+</head>
+<body>
+    <div>
+        <input type="text" id="searchInput" placeholder="Pesquisar por código ou descrição">
+        <button id="pesquisarBtn">Pesquisar</button>
+    </div>
+
+    <h2>Últimos Itens Lançados</h2>
+    <div id="ultimos-itens"></div>
+
+    <h2>Itens de Estoque</h2>
+    <div id="estoque"></div>
+
+    <!-- Modal para edição de quantidade -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Editar Quantidade</h2>
+            <input type="number" id="newQuantity" placeholder="Nova Quantidade" />
+            <button id="saveQuantityBtn">Salvar</button>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+    <script type="module" src="../scrypts/exibeEstoque.js"></script>
+</body>
+</html>

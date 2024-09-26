@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilo do corpo */
+.corpo_clint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo dos rótulos */
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilo dos inputs */
+input {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    border: 2px solid black; /* Como solicitado */
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px;
+    border: 2px solid black; /* Como solicitado */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#Voltar {
+    background-color: #007bff;
+}
+
+#Voltar:hover {
+    background-color: #0056b3;
+}

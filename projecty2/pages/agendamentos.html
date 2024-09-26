@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Agendamentos</title>
+    <link rel="stylesheet" href="../css/agenda.css">
+</head>
+<body>
+    <h1>Lista de Agendamentos</h1>
+<!-- Formulário de edição -->
+<div id="form-edicao" style="display: none;">
+    <input type="hidden" id="agendamento-id">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome">
+    <label for="cnpj">CNPJ:</label>
+    <input type="text" id="cnpj">
+    <label for="tempo">Data:</label>
+    <input type="text" id="tempo">
+    <label for="preco">Preço:</label>
+    <input type="text" id="preco">
+    <button id="salvar">Salvar</button>
+    <button id="cancelar">Cancelar</button>
+  </div>
+  
+  <!-- Lista de agendamentos -->
+  <div id="agendamentos-lista"></div>
+  
+    <!-- Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+    <script type="module" src="../scrypts/mostrar_agendamentos.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Agendamentos</title>
+    <link rel="stylesheet" href="../css/Finc.css">
+</head>
+<body>
+
+  <!-- formulario de edicao -->
+  <div id="form-edicao" style="display: none;">
+    <input type="hidden" id="fornecedor-id">
+    <label for="fornecedor">Fornecedor:</label>
+    <input type="text" id="fornecedor">
+    <label for="NFs">Numero da NFs</label>
+    <input type="text" id="nfs">
+    <label for="Tipo">Tipo</label>
+    <input type="text" id="tipo"> 
+    <label for="valorNFS">valorNFS:</label>
+    <input type="number" id="valorNFS">
+    <button id="salvar">Salvar</button>
+    <button id="cancelar">Cancelar</button>
+  </div>
+  
+  <!-- Lista de financeiro -->
+  <div id="financeiro-lista"></div>
+  
+    <!-- Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+    <script type="module" src="../scrypts/mostrar_finc.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página inicial</title>
+
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+  <h1>Página inicial</h1>
+
+  <body>
+    <div class="assection-fun">
+
+      <div>
+        <button id="link1" class="btn-home btn-home1"></button>
+        <p class="text-buttom"> <strong>Add Cliet</strong></p>
+      </div>
+
+      <div>
+        <button id="link2" class="btn-home btn-home2"></button>
+        <p class="text-buttom"> <strong>Agenda</strong></p>
+      </div>
+
+      <div>
+        <button id="link3" class="btn-home btn-home3"></button>
+        <p class="text-buttom"> <strong>NFs</strong></p>
+      </div>
+
+      <div>
+        <button id="link4" class="btn-home btn-home4"></button>
+        <p class="text-buttom"> <strong>All NFs</strong></p>
+      </div>
+
+      <div>
+        <button id="link5" class="btn-home btn-home5"></button>
+        <p class="text-buttom"> <strong>Estoque</strong></p>
+      </div>
+
+      <div class="container">
+
+      </div>
+    </div>
+
+     <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth-compat.js"></script>
+     <script src="../Db/index.js"></script>
+     <script src="../scrypts/scrypt.js"></script>
+     <script>
+      // Verifica se o usuário está autenticado
+      firebase.auth().onAuthStateChanged((user) => {
+          if (!user) {
+              // Redireciona para a página de login se o usuário não estiver autenticado
+              window.location.href = "index.html";
+          } else {
+              console.log('Usuário autenticado:', user);
+          }
+      });
+  </script>
+    
+  </body>
+
+</html>

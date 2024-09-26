@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/mostraFinc.css">
+</head>
+
+<body>
+    <div id="Financeiro"></div>
+
+    <form>
+        <div id="container"></div>
+        <div id="input-grid" class="input-container">
+            <label for="fornecedor">Fornecedor</label>
+            <input type="text" id="fornecedor">
+
+            <label for="nfs">Numero da NFs</label>
+            <input type="text" id="nfs">
+
+            <label for="tipo">Tipo</label>
+            <input type="text" id="tipo">
+
+            <label for="temp">Data</label>
+            <input type="date" id="temp">
+
+            <label for="valorNFS">Valor</label>
+            <input type="number" id="valorNFS">
+
+            <label for="codigo">Código item</label>
+            <input type="number" id="codigo">
+
+            <label for="descricao">Descrição material</label>
+            <input type="text" id="descricao">
+
+            <label for="valorUNI">Valor unitário</label>
+            <input type="number" id="valorUNI">
+
+            <label for="QTD">Quantidade</label>
+            <input type="number" id="QTD">
+
+            <button id="insereFinanceiro" type="button">Lançar</button>
+        </div>
+    </form> 
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+    <script type="module" src="../Db/insecF.js"></script>
+</body>
+
+</html>
